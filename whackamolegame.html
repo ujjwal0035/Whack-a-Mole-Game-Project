@@ -13,23 +13,23 @@
     /> 
 </head>
 <body>
-    <div class="game-container">
-        <h1>Whack a mole</h1>
-        <h3 id="score">Score: 0</h3>
-        <h3 id="time-left">time left</h3>
-        <button id="start-button">start</button>
-        <button id="reser-button" onClick="window.location.reload()">reset</button>
-        <div class="play-area">
-            <div class="play-cells" onclick="cellClickHandler(0,0,0)"></div>
-            <div class="play-cells" onclick="cellClickHandler(0,1,1)"></div>
-            <div class="play-cells" onclick="cellClickHandler(0,2,2)"></div>
-            <div class="play-cells" onclick="cellClickHandler(1,0,3)"></div>
-            <div class="play-cells" onclick="cellClickHandler(1,1,4)"></div>
-            <div class="play-cells" onclick="cellClickHandler(1,2,5)"></div>
-            <div class="play-cells" onclick="cellClickHandler(2,0,6)"></div>
-            <div class="play-cells" onclick="cellClickHandler(2,1,7)"></div>
-            <div class="play-cells" onclick="cellClickHandler(2,2,8)"></div>
-        </div>
+    <h1> Whack a mole </h1>
+    <h3 id="score">0</h3>
+    <h3 id="time-left">10s</h3>
+    <div class="mainContainer">
+        <div id="0" class="square " onclick="moleClickHandlar(0)"></div>
+        <div id="1" class="square " onclick="moleClickHandlar(1)"></div>
+        <div id="2" class="square " onclick="moleClickHandlar(2)"></div>
+        <div id="3" class="square " onclick="moleClickHandlar(3)"></div>
+        <div id="4" class="square " onclick="moleClickHandlar(4)"></div>
+        <div id="5" class="square " onclick="moleClickHandlar(5)"></div>
+        <div id="6" class="square " onclick="moleClickHandlar(6)"></div>
+        <div id="7" class="square " onclick="moleClickHandlar(7)"></div>
+        <div id="8" class="square " onclick="moleClickHandlar(8)"></div>
+    </div>
+    <div >
+        <button id="start" onclick="startClickHandlar()">Start</button>
+        <button id="reset" onclick="window.location.reload();">Reset</button>
     </div>
 </body>
 </html>
